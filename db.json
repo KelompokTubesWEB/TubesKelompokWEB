@@ -1,0 +1,110 @@
+{
+  "wasteTypes": [
+    {
+      "id": "plastic",
+      "name": "Plastik",
+      "icon": "♻️",
+      "description": "Botol PET, gelas plastik, dan kemasan yang bersih serta kering.",
+      "pricePerKg": 2500,
+      "tips": "Bilas seperlunya, keringkan, lalu pisahkan tutup dan label jika diminta bank sampah."
+    },
+    {
+      "id": "paper",
+      "name": "Kertas",
+      "icon": "📄",
+      "description": "Kardus, koran, dan kertas tulis yang tidak basah atau berminyak.",
+      "pricePerKg": 1800,
+      "tips": "Lipat kardus agar ringkas dan pisahkan kertas bersih dari tisu bekas."
+    },
+    {
+      "id": "metal",
+      "name": "Logam",
+      "icon": "🥫",
+      "description": "Kaleng aluminium dan logam bekas yang aman untuk disortir.",
+      "pricePerKg": 7000,
+      "tips": "Pastikan wadah kosong dan tidak memiliki bagian tajam yang terbuka."
+    },
+    {
+      "id": "glass",
+      "name": "Kaca",
+      "icon": "🫙",
+      "description": "Botol dan wadah kaca yang diterima oleh bank sampah tertentu.",
+      "pricePerKg": 1000,
+      "tips": "Jangan membawa kaca pecah tanpa pengemasan aman. Tanyakan aturan penerimaan lebih dahulu."
+    }
+  ],
+  "banks": [
+    {
+      "id": "bank-1",
+      "name": "Bank Sampah Hijau Lestari",
+      "address": "Jl. Melati No. 12, Bandung",
+      "hours": "Senin–Sabtu, 08.00–15.00",
+      "acceptedTypes": [
+        "Plastik",
+        "Kertas",
+        "Logam"
+      ],
+      "description": "Menerima sampah terpilah yang bersih dan kering.",
+      "phone": "(022) 7000-1001"
+    },
+    {
+      "id": "bank-2",
+      "name": "Bank Sampah Bumi Bersih",
+      "address": "Jl. Anggrek No. 8, Bandung",
+      "hours": "Senin–Jumat, 09.00–16.00",
+      "acceptedTypes": [
+        "Plastik",
+        "Kertas",
+        "Kaca"
+      ],
+      "description": "Berfokus pada pengumpulan sampah rumah tangga yang dapat didaur ulang.",
+      "phone": "(022) 7000-1002"
+    },
+    {
+      "id": "bank-3",
+      "name": "Bank Sampah Sahabat Alam",
+      "address": "Jl. Kenanga No. 5, Cimahi",
+      "hours": "Selasa–Sabtu, 08.30–14.00",
+      "acceptedTypes": [
+        "Plastik",
+        "Logam",
+        "Kaca"
+      ],
+      "description": "Melayani setoran terpilah dan edukasi pengurangan sampah.",
+      "phone": "(022) 7000-1003"
+    }
+  ],
+  "pickupRequests": [],
+  "deposits": [
+    {
+      "id": "dep-1001",
+      "customerName": "Rina Putri",
+      "wasteType": "Plastik",
+      "weightKg": 3.5,
+      "pricePerKg": 2500,
+      "totalValue": 8750,
+      "date": "2026-10-20",
+      "status": "Selesai"
+    },
+    {
+      "id": "dep-1002",
+      "customerName": "Dimas Saputra",
+      "wasteType": "Kertas",
+      "weightKg": 5,
+      "pricePerKg": 1800,
+      "totalValue": 9000,
+      "date": "2026-10-22",
+      "status": "Selesai"
+    },
+    {
+      "id": "dep-1003",
+      "customerName": "Ayu Lestari",
+      "wasteType": "Logam",
+      "weightKg": 1.2,
+      "pricePerKg": 7000,
+      "totalValue": 8400,
+      "date": "2026-10-24",
+      "status": "Diproses"
+    }
+  ]
+}
