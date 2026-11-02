@@ -1,0 +1,34 @@
+.deposit-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+.deposit-summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid var(--line);
+  background: #f8faf6;
+  border-radius: 10px;
+  padding: 17px;
+}
+.deposit-summary span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.deposit-summary strong {
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  color: var(--green);
+}
+.deposit-summary .summary-total {
+  font-size: 25px;
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 650px) {
+  .deposit-summary {
+    grid-template-columns: 1fr;
+  }
+}
