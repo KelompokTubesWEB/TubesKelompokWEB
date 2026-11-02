@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+/* ==========================================================
+   style.css — titik masuk CSS (Anggota 4 / koordinator)
+   File ini HANYA berisi @import. Urutan import PENTING karena CSS
+   bersifat cascade: shared -> components -> pages.
+   Menambah file CSS baru? Minta Anggota 4 menambahkan satu baris @import.
+   ========================================================== */
+
+/* Shared (Anggota 4) */
+@import "./styles/shared/base.css";
+@import "./styles/shared/layout.css";
+@import "./styles/shared/buttons.css";
+@import "./styles/shared/status.css";
+@import "./styles/shared/forms.css";
+@import "./styles/shared/filters.css";
+@import "./styles/shared/common.css";
+
+/* Komponen */
+@import "./styles/components/navbar.css";
+@import "./styles/components/footer.css";
+@import "./styles/components/waste-card.css";
+
+/* Halaman per fitur */
+@import "./styles/pages/home.css";
+@import "./styles/pages/waste-types.css";
+@import "./styles/pages/bank-list.css";
+@import "./styles/pages/bank-detail.css";
+@import "./styles/pages/pickup.css";
+@import "./styles/pages/deposit-form.css";
+@import "./styles/pages/deposit-history.css";
+@import "./styles/pages/dashboard.css";
