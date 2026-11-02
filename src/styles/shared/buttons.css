@@ -1,0 +1,62 @@
+/* ==========================================================
+   shared/buttons.css
+   Pemilik : Anggota 4 (koordinator)
+   Isi     : Semua varian tombol (.button, -small, -outline, -light)
+   ========================================================== */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid var(--green);
+  border-radius: 9px;
+  padding: 13px 18px;
+  background: var(--green);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  min-height: 46px;
+}
+.button:hover {
+  background: var(--green-dark);
+  transform: translateY(-1px);
+}
+.button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+}
+.button-small {
+  padding: 10px 14px;
+  min-height: 40px;
+}
+.button-outline {
+  background: transparent;
+  color: var(--green);
+}
+.button-outline:hover {
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+.button-light {
+  background: #fff;
+  color: var(--green-dark);
+  border-color: #fff;
+  white-space: nowrap;
+}
+.button-light:hover {
+  background: #edf6ef;
+  color: var(--green-dark);
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 650px) {
+  .button-small {
+    font-size: 11px;
+    padding: 8px 10px;
+    min-height: 35px;
+  }
+}

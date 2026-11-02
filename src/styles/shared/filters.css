@@ -1,0 +1,63 @@
+/* ==========================================================
+   shared/filters.css
+   Pemilik : Anggota 4 (koordinator)
+   Isi     : Kolom pencarian & dropdown filter — dipakai BankList.jsx (Anggota 2) dan DepositHistory.jsx (Anggota 3)
+   ========================================================== */
+
+.filters {
+  display: flex;
+  gap: 14px;
+  margin: 30px 0 25px;
+  align-items: end;
+}
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  border: 1px solid #dce5dd;
+  background: white;
+  border-radius: 9px;
+  padding: 0 13px;
+  min-height: 48px;
+  color: var(--muted);
+  font-size: 22px;
+}
+.search-field input {
+  border: 0;
+  outline: 0 !important;
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  font-size: 13px;
+  color: #20352c;
+}
+.filter-select {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #627068;
+}
+.filter-select select {
+  min-width: 165px;
+  min-height: 48px;
+  border: 1px solid #dce5dd;
+  border-radius: 9px;
+  padding: 0 12px;
+  background: white;
+  color: #30443a;
+  font-size: 13px;
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 650px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filter-select select {
+    width: 100%;
+  }
+}
