@@ -48,25 +48,9 @@ Buka alamat yang ditampilkan Vite (umumnya http://localhost:5173). JSON Server b
 - Anggota 3: `DepositForm.jsx`, `DepositHistory.jsx`
 - Anggota 4: `EconomicDashboard.jsx`, `Navbar.jsx`, `Footer.jsx`, `App.jsx`, `services/api.js`, `db.json`, integrasi dan pengujian
 
-Sebaiknya setiap anggota mengerjakan branch Git terpisah dan seluruh anggota ikut menguji fitur yang dibuatnya.
 
 ## Struktur CSS (dipecah per fitur)
 `src/style.css` kini hanya berisi `@import` (titik masuk). Gaya sebenarnya ada di `src/styles/`:
 
-| File | Pemilik | Dipakai oleh |
-|---|---|---|
-| `shared/base.css` | Anggota 4 | Reset, variabel `:root`, focus, `.container`, `.sr-only` |
-| `shared/layout.css` | Anggota 4 | `app-shell`, `page-main`, `page-heading`, `section`, `eyebrow`, `text-link` |
-| `shared/buttons.css` | Anggota 4 | Semua varian `.button` |
-| `shared/status.css` | Anggota 4 | `status-box`, `error-box`, `spinner` |
-| `shared/forms.css` | Anggota 4 | Form bersama (PickupRequest & DepositForm) |
-| `shared/filters.css` | Anggota 4 | Search & filter (BankList & DepositHistory) |
-| `shared/common.css` | Anggota 4 | `card`, `tag`, `empty-state`, `data-disclaimer`, `money-cell` |
-| `components/navbar.css`, `footer.css` | Anggota 4 | Navbar.jsx, Footer.jsx |
-| `components/waste-card.css` | Anggota 1 | WasteCard.jsx + `waste-grid` |
-| `pages/home.css`, `waste-types.css` | Anggota 1 | Home.jsx, WasteTypes.jsx |
-| `pages/bank-list.css`, `bank-detail.css`, `pickup.css` | Anggota 2 | BankList, BankDetail, PickupRequest |
-| `pages/deposit-form.css`, `deposit-history.css` | Anggota 3 | DepositForm, DepositHistory |
-| `pages/dashboard.css` | Anggota 4 | EconomicDashboard.jsx |
 
-Aturan: edit CSS fitur di file milik sendiri. Perubahan di `shared/` dikoordinasikan dengan Anggota 4. File CSS baru harus didaftarkan Anggota 4 di `style.css` (urutan import penting: shared → components → pages).
+
