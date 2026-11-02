@@ -1,0 +1,44 @@
+/* ==========================================================
+   shared/status.css
+   Pemilik : Anggota 4 (koordinator)
+   Isi     : Loading, error, dan spinner (dipakai StatusMessage.jsx & banyak halaman)
+   ========================================================== */
+
+.status-box {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+.spinner {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #dbe9de;
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+.error-box {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-color: #f0d4d0;
+  background: #fff9f8;
+  color: #963e34;
+}
+.error-box p {
+  margin: 0;
+  flex: 1;
+}
+.error-box .button {
+  flex-shrink: 0;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

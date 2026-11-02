@@ -1,0 +1,97 @@
+/* ==========================================================
+   pages/bank-detail.css
+   Pemilik : Anggota 2
+   Isi     : BankDetail.jsx
+   ========================================================== */
+
+.back-link {
+  display: inline-block;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.detail-panel {
+  display: grid;
+  grid-template-columns: 0.65fr 1.35fr;
+  gap: 35px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 32px;
+}
+.detail-illustration {
+  min-height: 250px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #edf6e7, #dcefe0);
+  border-radius: 14px;
+  font-size: 100px;
+}
+.detail-content h1 {
+  font-family: Manrope, sans-serif;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin: 10px 0;
+}
+.detail-content > p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.detail-facts {
+  display: grid;
+  gap: 15px;
+  margin: 23px 0;
+}
+.detail-facts div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.detail-facts span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.detail-facts strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+.detail-content h2 {
+  font-family: Manrope, sans-serif;
+  font-size: 17px;
+  margin: 25px 0 13px;
+}
+.detail-content > .button {
+  margin-top: 10px;
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 850px) {
+  .detail-panel {
+    grid-template-columns: 1fr;
+  }
+  .detail-illustration {
+    min-height: 180px;
+  }
+  .detail-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .detail-panel {
+    padding: 18px;
+    gap: 22px;
+  }
+  .detail-illustration {
+    min-height: 150px;
+    font-size: 75px;
+  }
+  .detail-content h1 {
+    font-size: 28px;
+  }
+  .detail-facts {
+    grid-template-columns: 1fr;
+  }
+}

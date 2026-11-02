@@ -1,0 +1,77 @@
+/* ==========================================================
+   components/waste-card.css
+   Pemilik : Anggota 1
+   Isi     : WasteCard.jsx + grid kartu sampah (dipakai Home.jsx & WasteTypes.jsx)
+   ========================================================== */
+
+.waste-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.waste-grid-all {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 25px;
+}
+.waste-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.waste-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+.waste-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: #eff6e9;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+.waste-card > p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  min-height: 66px;
+}
+.price-row {
+  border-top: 1px solid #edf0ed;
+  padding-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.price-row strong {
+  color: var(--green);
+  font-size: 13px;
+}
+.tips {
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--green);
+}
+.tips summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.tips p {
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 650px) {
+  .waste-grid,
+  .waste-grid-all {
+    grid-template-columns: 1fr;
+  }
+  .waste-card > p {
+    min-height: 0;
+  }
+}

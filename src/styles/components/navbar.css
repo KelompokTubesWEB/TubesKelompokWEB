@@ -1,0 +1,101 @@
+/* ==========================================================
+   components/navbar.css
+   Pemilik : Anggota 4
+   Isi     : Navbar.jsx
+   ========================================================== */
+
+.site-header {
+  height: 78px;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #edf1ed;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(12px);
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  font-family: Manrope, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
+}
+.brand-mark {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  background: var(--green);
+  color: white;
+  border-radius: 12px;
+  font-size: 27px;
+}
+.brand-accent {
+  color: var(--green);
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #65736b;
+  transition: color 0.2s;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--green);
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 850px) {
+  .main-nav {
+    gap: 12px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 650px) {
+  .site-header {
+    height: auto;
+    min-height: 70px;
+    position: relative;
+  }
+  .nav-wrap {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-block: 13px;
+    gap: 12px;
+  }
+  .brand {
+    font-size: 22px;
+  }
+  .main-nav {
+    width: 100%;
+    gap: 13px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .nav-link {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  .main-nav .button {
+    margin-left: auto;
+    white-space: nowrap;
+  }
+}
