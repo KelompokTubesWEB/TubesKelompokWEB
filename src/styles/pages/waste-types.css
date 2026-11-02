@@ -1,0 +1,19 @@
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 18px;
+  border: 1px solid #e0ebd5;
+  background: #f5f8ed;
+  border-radius: 10px;
+  color: #566b53;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-block: 24px;
+}
+.notice > span {
+  font-size: 18px;
+}
+.notice p {
+  margin: 0;
+}
